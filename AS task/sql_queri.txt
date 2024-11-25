@@ -1,0 +1,20 @@
+SQL Queries
+
+
+Basic queries
+
+1.SELECT * FROM employees;
+2.SELECT name, salary FROM employees;
+3.SELECT * FROM employees WHERE salary > 50000;
+4.SELECT * FROM employees WHERE YEAR(join_date) = 2020;
+5.SELECT * FROM employees WHERE name LIKE 'A%';
+
+
+Aggregate Functions
+
+1.SELECT AVG(salary) AS average_salary FROM employees;
+2.SELECT COUNT(*) AS total_employees FROM employees;
+3.SELECT MAX(salary) AS highest_salary FROM employees;
+4.SELECT SUM(salary) AS total_salary FROM employees;
+5.SELECT department, COUNT(*) AS employee_count FROM employees GROUP BY department;
+
