@@ -3,18 +3,35 @@ SQL Queries
 
 Basic queries
 
+1. Write a query to display all rows and columns from the employees table.
 1.SELECT * FROM employees;
+
+2. Retrieve only the name and salary of all employees from the employees table.
 2.SELECT name, salary FROM employees;
+
+3. Write a query to find all employees whose salary is greater than 50,000.
 3.SELECT * FROM employees WHERE salary > 50000;
+
+4. List all employees who joined the company in the year 2020.
 4.SELECT * FROM employees WHERE YEAR(join_date) = 2020;
+
+5. Retrieve the details of employees whose names start with the letter 'A'.
 5.SELECT * FROM employees WHERE name LIKE 'A%';
 
 
 Aggregate Functions
-
+1. Write a query to calculate the average salary of all employees.
 1.SELECT AVG(salary) AS average_salary FROM employees;
+
+2. Find the total number of employees in the company.
 2.SELECT COUNT(*) AS total_employees FROM employees;
+
+3. Write a query to find the highest salary in the employees table.
 3.SELECT MAX(salary) AS highest_salary FROM employees;
+
+4. Calculate the total salary paid by the company for all employees.
 4.SELECT SUM(salary) AS total_salary FROM employees;
+
+5. Find the count of employees in each department.
 5.SELECT department, COUNT(*) AS employee_count FROM employees GROUP BY department;
 
